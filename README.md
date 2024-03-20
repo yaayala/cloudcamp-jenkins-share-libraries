@@ -1,0 +1,1 @@
+# cloudcamp-jenkins-share-libraries
