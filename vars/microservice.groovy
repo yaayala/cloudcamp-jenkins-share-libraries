@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
-//comment
+def call() {
+
 node ('docker&&linux'){
 
     // Docker Build and Push Stages variables
@@ -63,3 +64,6 @@ def dockerPush(region, registryURL, appName, appVersion){
     }
 
 }
+
+}
+
