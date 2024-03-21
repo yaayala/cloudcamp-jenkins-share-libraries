@@ -19,9 +19,9 @@ def call() {
         //Call checkout stage method
         checkoutFromRepo(branch: "${branchName}", repoURL: "${repoURL}")
         //Call build stage method
-        dockerBuild(appName: appName, dockerFilepath: dockerFilepath, dockerContext: dockerContext)
+        dockerBuild(appName: appName, dockerFilepath: dockerFilepath, context: dockerContext)
         //Call push stage method
-        dockerPush(awsRegion: "${awsRegion}", registryURL: "${registryURL}", appName: "${appName}", appVersion: "${appVersion}")
+        dockerPush(region: "${awsRegion}", registryURL: "${registryURL}", appName: "${appName}", appVersion: "${appVersion}")
 
 
 
